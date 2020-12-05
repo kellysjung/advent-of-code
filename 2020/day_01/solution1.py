@@ -8,21 +8,4 @@ def calculate_expenses_two(inputs):
 			print(looking_for * value)
 			return
 
-def calculate_expenses_three(inputs):
-	inputs.sort()
-	length = len(inputs)
-	for i in range(0, length - 2):
-		j = i + 1
-		k = length - 1
-
-		while (j < k):
-			if (inputs[i] + inputs[j] + inputs[k] == 2020):
-				print(inputs[i] * inputs[j] * inputs[k])
-				return
-			elif (inputs[i] + inputs[j] + inputs[k] < 2020):
-				j += 1
-			else:
-				k -= 1
-
 calculate_expenses_two(inputs)
-calculate_expenses_three(inputs)
