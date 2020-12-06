@@ -3,8 +3,8 @@ import re
 def open_input(day):
     with open('./2020/day_{}/input.txt'.format(day), 'r') as file:
         data = file.read()
-        splitData = data.splitlines()
-        return splitData
+        split_data = data.splitlines()
+        return split_data
 
 def is_passport_valid(credentials):
 	credentials_check = [0, 0, 0, 0, 0, 0, 0, 0]

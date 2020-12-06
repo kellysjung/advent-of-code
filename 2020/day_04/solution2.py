@@ -3,8 +3,8 @@ import re
 def open_input(day):
     with open('./2020/day_{}/input.txt'.format(day), 'r') as file:
         data = file.read()
-        splitData = data.splitlines()
-        return splitData
+        split_data = data.splitlines()
+        return split_data
 
 def validate_year(entry, lower, upper):
 	entry = int(entry)
@@ -21,7 +21,6 @@ def validate_height(entry):
 		value = int(entry.split('in')[0]) 
 		if value >= 59 and value <= 76:
 			return True
-	
 	return False
 
 def validate_hair_color(entry):

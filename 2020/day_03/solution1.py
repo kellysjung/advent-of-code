@@ -1,8 +1,8 @@
 def open_input(day):
     with open('./2020/day_{}/input.txt'.format(day), 'r') as file:
         data = file.read()
-        splitData = data.splitlines()
-        return splitData
+        split_data = data.splitlines()
+        return split_data
 
 def count_tree_encounters(input):
 	row_length = len(input[0])
