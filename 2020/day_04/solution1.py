@@ -41,7 +41,6 @@ def count_valid_passports(input):
 
 	for row in input:
 		if row:
-			print(row)
 			credentials.append(row)
 		
 		if (not row) or (row == input[len(input)-1]):
